@@ -1,7 +1,7 @@
 from django.shortcuts import render
-from django import HttResponse
+from django.http import HttpResponse
 
 def home(request):
     template_name = 'licitacao/index.html'
-    context = ''
+    context = {}
     return render(request, template_name, context)
