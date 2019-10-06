@@ -1,0 +1,82 @@
+{% extends "licitacao/base.html" %}
+
+    {% load static %}
+
+    {% block content %}
+
+    <!-- ***** Breadcrumb Area Start ***** -->
+    <div class="breadcrumb-area">
+        <div class="container h-100">
+            <div class="row h-100 align-items-end">
+                <div class="col-12">
+                    <div class="breadcumb--con">
+                        <h2 class="title">Registrar Denúncia</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Background Curve -->
+        <div class="breadcrumb-bg-curve">
+            <img src="{% static 'img/core-img/curve-5.png' %}" alt="">
+        </div>
+    </div>
+    <!-- ***** Breadcrumb Area End ***** -->
+
+    <!-- ***** Contact Area Start ***** -->
+    <section class="uza-contact-area section-padding-80">
+        <div class="container">
+            <div class="row justify-content-between">
+                <!-- Single Contact Card -->
+                <div class="col-3 col-lg-12">
+                    <div class="contact-sidebar-area mb-80">
+                        <!-- Single Sidebar Area -->
+                        <div class="single-contact-card mb-50">
+                            <h4>AVISO DE LICITAÇÃO</h4>
+                            <h3>Pregão Eletrônico nº 0197/2019</h3>
+                            <h6>Processo de Compras nº 0612/2019</h6>
+                        </div>
+                        <form class="col-lg-6">
+                            <div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                    <label class="form-check-label" for="inlineRadio1">Anónimo</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2">Se identificar</label>
+                                </div>
+                            </div>
+
+                            <div class="denounces">
+                                <p>Para que orgãos voce deseja realizar a denuncia?</p>
+
+                                <div class="form-check form-check-radio">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">Ministério Público</label>
+                                </div>
+                                <div class="form-check form-check-radio">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                    <label class="form-check-label" for="exampleRadios2">Tribunal de Contas do Estado</label>
+                                </div>
+                                <div class="form-check form-check-radio">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                    <label class="form-check-label" for="exampleRadios2">Prefeitura Municipal</label>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label>
+                                    <textarea class="form-control" placeholder="Detalhe o motivo da denúncia." required></textarea>
+                                </label>
+                            </div>
+                        </form>
+                        <a href="{% url 'url_obrigado' %}" class="btn btn-danger">Denunciar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Contact Area End ***** -->
+
+    {% endblock %}

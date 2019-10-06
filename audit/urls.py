@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from licitacao.views import home, licitacoes, aviso, julgamento, homologada
+from licitacao.views import home, licitacoes, aviso, julgamento, homologada, denuncia, obrigado
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -23,5 +23,8 @@ urlpatterns = [
     path('aviso/', aviso, name='url_aviso'),
     path('julgamento/', julgamento, name='url_julgamento'),
     path('homologada/', homologada, name='url_homologada'),
+    path('denuncia/', denuncia, name='url_denuncia'),
+    path('obrigado/', obrigado, name='url_obrigado'),
     path('', home, name='url_home'),
 ]
+

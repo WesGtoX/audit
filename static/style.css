@@ -2082,3 +2082,50 @@ input:focus {
     padding: 20px; }
 
 /*# sourceMappingURL=style.css.map */
+
+#audit-log {
+  max-width: 50%;
+  margin-bottom: 15px;
+}
+
+.uza-btn {
+  margin: 20px !important;
+  width: 270px;
+  border-radius: 5px;
+}
+
+.title {
+  text-transform: uppercase !important;
+}
+
+.fraude {
+  color: red;
+}
+
+.select-inform {
+  font-weight: bold;
+}
+
+.custom-radio {
+  margin: 10px 0;
+}
+
+a.btn-danger {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.denounces {
+  margin: 15px 0;
+}
+
+.form-check-radio {
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 991px) {
+  .col-3 {
+       flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+}
