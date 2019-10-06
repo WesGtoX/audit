@@ -15,9 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from licitacao.views import home
+from licitacao.views import home, licitacoes, aviso, julgamento, homologada
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', home),
+    path('licitacoes/', licitacoes, name='url_licitacoes'),
+    path('aviso/', aviso, name='url_aviso'),
+    path('julgamento/', julgamento, name='url_julgamento'),
+    path('homologada/', homologada, name='url_homologada'),
+    path('', home, name='url_home'),
 ]

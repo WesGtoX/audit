@@ -1,31 +1,8 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+{% extends "licitacao/base.html" %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="uza - Model Agency HTML5 Template">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    {% load static %}
 
-    <!-- Title -->
-    <title>AUDIT - Licitações</title>
-
-    <!-- Favicon -->
-    <link rel="icon" href="./img/core-img/favicon.ico">
-
-    <!-- Core Stylesheet -->
-    <link rel="stylesheet" href="style.css">
-
-</head>
-
-<body>
-    <!-- Preloader -->
-    <div id="preloader">
-        <div class="wrapper">
-            <div class="cssload-loader"></div>
-        </div>
-    </div>
-
+    {% block content %}
     <!-- ***** Top Search Area Start ***** -->
     <div class="top-search-area">
         <!-- Search Modal -->
@@ -75,8 +52,8 @@
                             <ul id="nav">
                                 <li class="current-item"><a href="./index.html">Inicio</a></li>
                                 <li><a href="./licitacoes.html">Licitações</a></li>
-                                <li><a href="./about.html">Sobre</a></li>
-                                <li><a href="./contact.html">Contato</a></li>
+                                <li><a href="aviso.html">Sobre</a></li>
+                                <li><a href="julgamento.html">Contato</a></li>
                             </ul>
 
                             <!-- Login / Register -->
@@ -90,7 +67,6 @@
                             </div>
                         </div>
                         <!-- Nav End -->
-
                     </div>
                 </nav>
             </div>
@@ -115,7 +91,6 @@
                 </div>
             </div>
         </div>
-
         <!-- Background Curve -->
         <div class="breadcrumb-bg-curve">
             <img src="./img/core-img/curve-5.png" alt="">
@@ -128,9 +103,9 @@
 
         <!-- Portfolio Menu -->
         <div class="portfolio-menu text-center mb-80">
-            <a href="./aviso.html" class="btn uza-btn btn-2" data-animation="fadeInUp" data-delay="700ms">AVISO DE LICITAÇÃO</a>
-            <a href="./julgamento.html" class="btn uza-btn btn-2" data-animation="fadeInUp" data-delay="700ms">EDITAL DE JULGAMENTO</a>
-            <a href="./homologada.html" class="btn uza-btn btn-2" data-animation="fadeInUp" data-delay="700ms">EDITAL DE HOMOLOGAÇÃO</a>
+            <a href="{% url 'url_aviso' %}" class="btn uza-btn btn-2" data-animation="fadeInUp" data-delay="700ms">AVISO DE LICITAÇÃO</a>
+            <a href="{% url 'url_julgamento' %}" class="btn uza-btn btn-2" data-animation="fadeInUp" data-delay="700ms">EDITAL DE JULGAMENTO</a>
+            <a href="{% url 'url_homologada' %}" class="btn uza-btn btn-2" data-animation="fadeInUp" data-delay="700ms">EDITAL DE HOMOLOGAÇÃO</a>
         </div>
 
         <div class="container-fluid">
@@ -302,90 +277,4 @@
     </section>
     <!-- ***** Newsletter Area End ***** -->
 
-    <!-- ***** Footer Area Start ***** -->
-    <footer class="footer-area section-padding-80-0">
-        <div class="container">
-            <div class="row justify-content-between">
-
-                <!-- Single Footer Widget -->
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="single-footer-widget mb-80">
-                        <!-- Widget Title -->
-                        <h4 class="widget-title">Entre em Contato</h4>
-
-                        <!-- Footer Content -->
-                        <div class="footer-content mb-15">
-                            <h3>0800 567 8808</h3>
-                            <p>suporte@audit.com.br</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Footer Widget -->
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="single-footer-widget mb-80">
-                        <!-- Widget Title -->
-                        <h4 class="widget-title">Acesso Rápido</h4>
-
-                        <!-- Nav -->
-                        <nav>
-                            <ul class="our-link">
-                                <li><a href="#">Sobre Nós</a></li>
-                                <li><a href="#">Contato</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-
-
-                <!-- Single Footer Widget -->
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="single-footer-widget mb-80">
-                        <!-- Widget Title -->
-                        <h4 class="widget-title">Sobre Nós</h4>
-                        <p>Mostrando ao Brasil uma gestão transparente</p>
-
-                        <!-- Copywrite Text -->
-                        <div class="copywrite-text mb-30">
-                            <p>&copy; Copyright 2019 <a href="#">Audit</a>.</p>
-                        </div>
-
-                        <!-- Social Info -->
-                        <div class="footer-social-info">
-                            <a href="#" class="facebook" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a>
-                            <a href="#" class="twitter" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a>
-                            <a href="#" class="pinterest" data-toggle="tooltip" data-placement="top" title="Pinterest"><i class="fa fa-pinterest"></i></a>
-                            <a href="#" class="instagram" data-toggle="tooltip" data-placement="top" title="Instagram"><i class="fa fa-instagram"></i></a>
-                            <a href="#" class="youtube" data-toggle="tooltip" data-placement="top" title="YouTube"><i class="fa fa-youtube-play"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
- <div class="row" style="margin-bottom: 30px;">
-                
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos os direitos reservados<i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://audit.com" target="_blank">Audit</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            </div>
-
-        </div>
-    </footer>
-    <!-- ***** Footer Area End ***** -->
-
-    <!-- ******* All JS Files ******* -->
-    <!-- jQuery js -->
-    <script src="js/jquery.min.js"></script>
-    <!-- Popper js -->
-    <script src="js/popper.min.js"></script>
-    <!-- Bootstrap js -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- All js -->
-    <script src="js/uza.bundle.js"></script>
-    <!-- Active js -->
-    <script src="js/default-assets/active.js"></script>
-
-</body>
-
-</html>
+    {% endblock %}
