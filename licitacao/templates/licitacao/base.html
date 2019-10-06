@@ -1,0 +1,90 @@
+{% load static %}
+{% load compress %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="uza - Model Agency HTML5 Template">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Title -->
+    <title>AUDIT GOV</title>
+    <!-- Favicon -->
+    <link rel="icon" href="{% static 'img/core-img/favicon.ico' %}">
+    <!-- Core Stylesheet -->
+    {% compress css %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    {% endcompress %}
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="wrapper">
+            <div class="cssload-loader"></div>
+        </div>
+    </div>
+
+    {% block content %}{% endblock %}
+
+    <!-- ***** Footer Area Start ***** -->
+    <footer class="footer-area section-padding-80-0">
+        <div class="container">
+            <div class="row justify-content-between">
+                <!-- Single Footer Widget -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-footer-widget mb-80">
+                        <!-- Widget Title -->
+                        <h4 class="widget-title">Entre em Contato</h4>
+
+                        <!-- Footer Content -->
+                        <div class="footer-content mb-15">
+                            <h3>0800 567 8808</h3>
+                            <p>suporte@audit.com.br</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Footer Widget -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-footer-widget mb-80">
+                        <!-- Widget Title -->
+                        <h4 class="widget-title">Acesso Rápido</h4>
+
+                        <!-- Nav -->
+                        <nav>
+                            <ul class="our-link">
+                                <li><a href="#">Sobre Nós</a></li>
+                                <li><a href="#">Contato</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <!-- Single Footer Widget -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-footer-widget mb-80">
+                        <!-- Widget Title -->
+                        <h4 class="widget-title">Sobre Nós</h4>
+                        <p>Mostrando ao Brasil uma gestão transparente</p>
+                        <!-- Copywrite Text -->
+                        <div class="copywrite-text mb-30">
+                            <p>&copy; Copyright 2019 <a href="#">Audit</a>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ***** Footer Area End ***** -->
+
+    <!-- ******* All JS Files ******* -->
+    <!-- jQuery js -->
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <!-- Popper js -->
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <!-- Bootstrap js -->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <!-- All js -->
+    <script src="{% static 'js/uza.bundle.js' %}"></script>
+    <!-- Active js -->
+    <script src="{% static 'js/default-assets/active.js' %}"></script>
+</body>
+</html>
