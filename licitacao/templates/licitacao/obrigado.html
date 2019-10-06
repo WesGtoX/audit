@@ -1,0 +1,25 @@
+{% extends "licitacao/base.html" %}
+
+    {% load static %}
+
+    {% block content %}
+
+    <!-- ***** Breadcrumb Area Start ***** -->
+    <div class="breadcrumb-area">
+        <!-- Background Curve -->
+        <div class="breadcrumb-bg-curve">
+            <img src="{% static 'img/core-img/curve-5.png' %}" alt="">
+        </div>
+    </div>
+    <!-- ***** Breadcrumb Area End ***** -->
+
+    <div class="card text-center">
+        <div class="card-body">
+            <h1 class="card-title">Muito Obrigado!</h1>
+            <h3 class="card-text">Por ajudar o Brasil a ser um país melhor.</h3>
+            <h3 class="card-text">Juntos podemos combater a corrupção!</h3>
+            <a href="{% url 'url_home' %}" class="btn btn-primary">Voltar para o Início</a>
+        </div>
+    </div>
+
+    {% endblock %}
