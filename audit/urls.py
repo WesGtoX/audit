@@ -27,4 +27,3 @@ urlpatterns = [
     path('obrigado/', obrigado, name='url_obrigado'),
     path('', home, name='url_home'),
 ]
-
